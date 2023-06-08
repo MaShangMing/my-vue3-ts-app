@@ -37,7 +37,7 @@ module.exports = {
     "prefer-const": "off", // 使用 let 关键字声明但在初始分配后从未重新分配的变量，要求使用 const
     "no-use-before-define": "off", // 禁止在 函数/类/变量 定义之前使用它们
     "no-irregular-whitespace": "off", // 禁止不规则的空白
-​
+
     // typeScript (https://typescript-eslint.io/rules)
     "@typescript-eslint/no-unused-vars": "error", // 禁止定义未使用的变量
     "@typescript-eslint/prefer-ts-expect-error": "error", // 禁止使用 @ts-ignore
@@ -52,7 +52,7 @@ module.exports = {
     "@typescript-eslint/ban-ts-comment": "off", // 禁止 @ts-<directive> 使用注释或要求在指令后进行描述
     "@typescript-eslint/no-non-null-assertion": "off", // 不允许使用后缀运算符的非空断言(!)
     "@typescript-eslint/explicit-module-boundary-types": "off", // 要求导出函数和类的公共类方法的显式返回和参数类型
-​
+
     // vue (https://eslint.vuejs.org/rules)
     "vue/script-setup-uses-vars": "error", // 防止<script setup>使用的变量<template>被标记为未使用，此规则仅在启用该no-unused-vars规则时有效。
     "vue/v-slot-style": "error", // 强制执行 v-slot 指令样式
