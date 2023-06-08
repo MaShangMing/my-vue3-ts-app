@@ -1,18 +1,14 @@
-# Vue 3 + TypeScript + Vite
-
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Type Support For `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
-
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+## Eslint
+eslint                            ESLint 核心库
+eslint-config-prettier            关掉所有和 Prettier 冲突的 ESLint 的配置
+eslint-plugin-prettier            将 Prettier 的 rules 以插件的形式加入到 ESLint 里面
+eslint-plugin-vue                 为 Vue 使用 ESlint 的插件
+@typescript-eslint/eslint-plugin  ESLint 插件，包含了各类定义好的检测 TypeScript 代码的规范
+@typescript-eslint/parser         ESLint 的解析器，用于解析 TypeScript，从而检查和规范 TypeScript 代码
+## StyleLint
+stylelint                         stylelint 核心库
+stylelint-config-html             Stylelint 的可共享 HTML（和类似 HTML）配置，捆绑 postcss-html 并对其进行配置。stylelint-config-recommended-scss 扩展 stylelint-config-recommended 共享配置，并为 SCSS 配置其规则stylelint-config-recommended-vue  扩展 stylelint-config-recommended 共享配置，并为 Vue 配置其规则stylelint-config-standard         打开额外的规则来执行在规范和一些 CSS 样式指南中发现的通用约定，包括：惯用 CSS 原则，谷歌的 CSS 样式指南，Airbnb 的样式指南，和 @mdo 的代码指南。
+stylelint-config-standard-scss    扩展 stylelint-config-standard 共享配置，并为 SCSS 配置其规则stylelint-config-recess-order     属性的排序（插件包）
+stylelint-config-prettier         关闭所有不必要的或可能与 Prettier 冲突的规则
+postcss                           postcss-html 的依赖包
+postcss-html                      用于解析 HTML（和类似 HTML）的 PostCSS 语法
