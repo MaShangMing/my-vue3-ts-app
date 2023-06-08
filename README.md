@@ -1,4 +1,6 @@
 ## Eslint
+|依赖| |作用描述|
+|:----:|:----|
 |eslint|                            |ESLint 核心库|
 |eslint-config-prettier|            |关掉所有和 Prettier 冲突的 ESLint 的配置|
 |eslint-plugin-prettier|            |将 Prettier 的 rules 以插件的形式加入到 ESLint 里面|
@@ -6,6 +8,8 @@
 |@typescript-eslint/eslint-plugin|  |ESLint 插件，包含了各类定义好的检测 TypeScript 代码的规范|
 |@typescript-eslint/parser|         |ESLint 的解析器，用于解析 TypeScript，从而检查和规范 TypeScript 代码|
 ## StyleLint
+|依赖| |作用描述|
+|:----:|:----|
 |stylelint|                         |stylelint 核心库|
 |stylelint-config-html|             |Stylelint 的可共享 HTML（和类似 HTML）配置，捆绑 postcss-html 并对其进行配置。|
 |stylelint-config-recommended-scss| |扩展 stylelint-config-recommended 共享配置，并为 SCSS 配置其规则|
