@@ -5,7 +5,7 @@ module.exports = {
   env: {
     browser: true,
     node: true,
-    es6: true,
+    es6: true
   },
   // 指定如何解析语法
   parser: "vue-eslint-parser",
@@ -16,15 +16,11 @@ module.exports = {
     sourceType: "module",
     jsxPragma: "React",
     ecmaFeatures: {
-      jsx: true,
-    },
+      jsx: true
+    }
   },
   // 继承某些已有的规则
-  extends: [
-    "plugin:vue/vue3-recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended",
-  ],
+  extends: ["plugin:vue/vue3-recommended", "plugin:@typescript-eslint/recommended", "plugin:prettier/recommended"],
   /**
    * "off" 或 0    ==>  关闭规则
    * "warn" 或 1   ==>  打开的规则作为警告（不影响代码执行）
@@ -67,6 +63,6 @@ module.exports = {
     "vue/singleline-html-element-content-newline": "off", // 在单行元素的内容之前和之后需要换行符
     "vue/attribute-hyphenation": "off", // 对模板中的自定义组件强制执行属性命名样式
     "vue/require-default-prop": "off", // 此规则要求为每个 prop 为必填时，必须提供默认值
-    "vue/multi-word-component-names": "off", // 要求组件名称始终为 “-” 链接的单词
-  },
+    "vue/multi-word-component-names": "off" // 要求组件名称始终为 “-” 链接的单词
+  }
 };

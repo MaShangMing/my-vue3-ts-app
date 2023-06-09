@@ -1,4 +1,7 @@
+# **配置**
+
 ## Eslint
+
 | 依赖 | 作用描述 |
 | :----: | :---- |
 |eslint|                            ESLint 核心库|
@@ -7,7 +10,9 @@
 |eslint-plugin-vue|                 为 Vue 使用 ESlint 的插件|
 |@typescript-eslint/eslint-plugin|  ESLint 插件，包含了各类定义好的检测 TypeScript 代码的规范|
 |@typescript-eslint/parser|         ESLint 的解析器，用于解析 TypeScript，从而检查和规范 TypeScript 代码|
+
 ## StyleLint
+
 | 依赖| 作用描述 |
 | :----: | :---- |
 |stylelint|                         stylelint 核心库|
@@ -20,7 +25,9 @@
 |stylelint-config-prettier|         关闭所有不必要的或可能与 Prettier 冲突的规则|
 |postcss|                           postcss-html 的依赖包|
 |postcss-html|                      用于解析 HTML（和类似 HTML）的 PostCSS 语法|
+
 ## package.json
+
 ``` {
   "scripts": {
     // 本地运行(dev环境)

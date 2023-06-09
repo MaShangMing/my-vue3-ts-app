@@ -8,17 +8,21 @@ module.exports = {
     "stylelint-config-html/vue", // 配置 vue 中 template 样式格式化
     "stylelint-config-standard-scss", // 配置 stylelint scss 插件
     "stylelint-config-recommended-vue/scss", // 配置 vue 中 scss 样式格式化
-    "stylelint-config-recess-order", // 配置 stylelint css 属性书写顺序插件,
-    "stylelint-config-prettier", // 配置 stylelint 和 prettier 兼容
+    "stylelint-config-recommended-scss", // 配置scss 样式格式化
+    "stylelint-config-standard-vue" //lint.vue文件的样式配置
   ],
+  plugins: ['stylelint-order'],
   overrides: [
-    // 扫描 .vue/html 文件中的 <style> 标签内的样式
     {
-      files: ["**/*.{vue,html}"],
-      customSyntax: "postcss-html",
-    },
+      files: ['**/*.(less|css|scss|vue|html)'],
+      customSyntax: 'postcss-less'
+    }, {
+      files: ['**/*.(html|vue)'],
+      customSyntax: 'postcss-html'
+    }
   ],
   rules: {
+    "declaration-property-value-no-unknown": true,
     "function-url-quotes": "always", // URL 的引号 "always(必须加上引号)"|"never(没有引号)"
     "string-quotes": "double", // 指定字符串使用单引号或双引号 "single(单引号)"|"double(双引号)"
     "unit-case": "lower", // 指定单位的大小写 "lower(全小写)"|"upper(全大写)"
@@ -40,6 +44,80 @@ module.exports = {
         ignorePseudoClasses: ["global", "v-deep", "deep"],
       },
     ],
+    // 指定样式的排序
+    'order/properties-order': [
+      'position',
+      'top',
+      'right',
+      'bottom',
+      'left',
+      'z-index',
+      'display',
+      'justify-content',
+      'align-items',
+      'float',
+      'clear',
+      'overflow',
+      'overflow-x',
+      'overflow-y',
+      'padding',
+      'padding-top',
+      'padding-right',
+      'padding-bottom',
+      'padding-left',
+      'margin',
+      'margin-top',
+      'margin-right',
+      'margin-bottom',
+      'margin-left',
+      'width',
+      'min-width',
+      'max-width',
+      'height',
+      'min-height',
+      'max-height',
+      'font-size',
+      'font-family',
+      'text-align',
+      'text-justify',
+      'text-indent',
+      'text-overflow',
+      'text-decoration',
+      'white-space',
+      'color',
+      'background',
+      'background-position',
+      'background-repeat',
+      'background-size',
+      'background-color',
+      'background-clip',
+      'border',
+      'border-style',
+      'border-width',
+      'border-color',
+      'border-top-style',
+      'border-top-width',
+      'border-top-color',
+      'border-right-style',
+      'border-right-width',
+      'border-right-color',
+      'border-bottom-style',
+      'border-bottom-width',
+      'border-bottom-color',
+      'border-left-style',
+      'border-left-width',
+      'border-left-color',
+      'border-radius',
+      'opacity',
+      'filter',
+      'list-style',
+      'outline',
+      'visibility',
+      'box-shadow',
+      'text-shadow',
+      'resize',
+      'transition'
+    ]
   },
   ignoreFiles: ["**/*.js", "**/*.jsx", "**/*.tsx", "**/*.ts"],
 };
